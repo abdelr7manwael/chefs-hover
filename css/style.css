@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    /* remove margin from all elements */
+
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    /* to center the div (left - right) */
+}
+
+.clear {
+    clear: both;
+}
+
+/* ------------------------------------- */
+/* chefs */
+.chefs {
+    background-color: #ddd;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.chefs .title {
+    margin-bottom: 40px;
+}
+
+.chefs .title .chefs-title {
+    font-size: 20px;
+    color: #7f7f90;
+    text-transform: uppercase;
+}
+
+.chefs .title .our {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+.chefs .title .our span {
+    color: #ce1212;
+}
+
+
+.chefs .chefs-info .single-chef {
+    width: 30%;
+    /* 3 div */
+    background-color: white;
+    padding-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    /* box-shadow: x-axis y-axis blur spread color; */
+    box-shadow: 0 4px 4px 0px rgba(128, 128, 128, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s;
+    float: left;
+    margin: 0px 12px;
+}
+
+.chefs .chefs-info .single-chef .div-img {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.chefs .chefs-info .single-chef .div-img img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.chefs .chefs-info .single-chef .div-img .absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.chefs .chefs-info .single-chef h3 {
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.chefs .chefs-info .single-chef .job-title {
+    font-size: 18px;
+}
+
+.chefs .chefs-info .single-chef p {
+    font-style: italic;
+    color: #7f7f90;
+    padding: 5px 20px;
+    text-transform: capitalize;
+}
+
+.chefs .chefs-info .single-chef .icons {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2px 3px;
+    width: fit-content;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    right: -60px;
+    transition: right 1s 1s;
+}
+
+.chefs .chefs-info .single-chef:hover {
+    transform: scale(1.08);
+    z-index: 30;
+}
+
+.chefs .chefs-info .single-chef:hover .icons {
+    right: 15px;
+}
+
+.chefs .chefs-info .single-chef .icons i {
+    display: block;
+    margin: 10px 5px;
+    font-size: 20px;
+}
+
+.chefs .chefs-info .single-chef .icons i:hover {
+    color: skyblue;
+}
